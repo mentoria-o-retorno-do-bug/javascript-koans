@@ -1,9 +1,9 @@
-describe("About Arrays", function() {
+describe("Sobre Arrays", function() {
 
-  //We shall contemplate truth by testing reality, via spec expectations.
-  it("should create arrays", function() {
+  //Devemos contemplar a verdade testando a realidade, via expectativas de teste.
+  it("deve criar arrays", function() {
     var emptyArray = [];
-    expect(typeof(emptyArray)).toBe(FILL_ME_IN); //A mistake? - http://javascript.crockford.com/remedial.html
+    expect(typeof(emptyArray)).toBe(FILL_ME_IN); //Um erro? - http://javascript.crockford.com/remedial.html
     expect(emptyArray.length).toBe(FILL_ME_IN);
 
     var multiTypeArray = [0, 1, "two", function () { return 3; }, {value1: 4, value2: 5}, [6, 7]];
@@ -15,7 +15,7 @@ describe("About Arrays", function() {
     expect(multiTypeArray[5][0]).toBe(FILL_ME_IN);
   });
 
-  it("should understand array literals", function () {
+  it("deve entender literais de array", function () {
     var array = [];
     expect(array).toEqual([]);
 
@@ -29,7 +29,7 @@ describe("About Arrays", function() {
     expect(array).toEqual(FILL_ME_IN);
   });
 
-  it("should understand array length", function () {
+  it("deve entender o comprimento do array", function () {
     var fourNumberArray = [1, 2, 3, 4];
 
     expect(fourNumberArray.length).toBe(FILL_ME_IN);
@@ -43,7 +43,7 @@ describe("About Arrays", function() {
     expect(tenEmptyElementArray.length).toBe(FILL_ME_IN);
   });
 
-  it("should slice arrays", function () {
+  it("deve fatiar arrays", function () {
     var array = ["peanut", "butter", "and", "jelly"];
 
     expect(array.slice(0, 1)).toEqual(FILL_ME_IN);
@@ -55,7 +55,7 @@ describe("About Arrays", function() {
     expect(array.slice(5, 1)).toEqual(FILL_ME_IN);
   });
 
-  it("should know array references", function () {
+  it("deve conhecer referências de array", function () {
     var array = [ "zero", "one", "two", "three", "four", "five" ];
 
     function passedByReference(refArray) {
@@ -73,7 +73,7 @@ describe("About Arrays", function() {
     expect(array[3]).toBe(FILL_ME_IN);
   });
 
-  it("should push and pop", function () {
+  it("deve fazer push e pop", function () {
     var array = [1, 2];
     array.push(3);
 
@@ -84,7 +84,7 @@ describe("About Arrays", function() {
     expect(array).toEqual(FILL_ME_IN);
   });
 
-  it("should know about shifting arrays", function () {
+  it("deve conhecer sobre deslocamento de arrays", function () {
     var array = [1, 2];
 
     array.unshift(3);

@@ -1,6 +1,6 @@
-describe("About Functions", function() {
+describe("Sobre Funções", function() {
 
-  it("should declare functions", function() {
+  it("deve declarar funções", function() {
 
     function add(a, b) {
       return a + b;
@@ -9,7 +9,7 @@ describe("About Functions", function() {
     expect(add(1, 2)).toBe(FILL_ME_IN);
   });
 
-  it("should know internal variables override outer variables", function () {
+  it("deve saber que variáveis internas sobrescrevem variáveis externas", function () {
     var message = "Outer";
 
     function getMessage() {
@@ -26,7 +26,7 @@ describe("About Functions", function() {
     expect(message).toBe(FILL_ME_IN);
   });
 
-  it("should have lexical scoping", function () {
+  it("deve ter escopo léxico", function () {
     var variable = "top-level";
     function parentfunction() {
       var variable = "local";
@@ -38,7 +38,7 @@ describe("About Functions", function() {
     expect(parentfunction()).toBe(FILL_ME_IN);
   });
 
-  it("should use lexical scoping to synthesise functions", function () {
+  it("deve usar escopo léxico para sintetizar funções", function () {
 
     function makeMysteryFunction(makerValue)
     {
@@ -55,7 +55,7 @@ describe("About Functions", function() {
     expect(mysteryFunction3(10) + mysteryFunction5(5)).toBe(FILL_ME_IN);
   });
 
-  it("should allow extra function arguments", function () {
+  it("deve permitir argumentos extras de função", function () {
 
     function returnFirstArg(firstArg) {
       return firstArg;
@@ -80,7 +80,7 @@ describe("About Functions", function() {
     expect(returnAllArgs("first", "second", "third")).toBe(FILL_ME_IN);
   });
 
-  it("should pass functions as values", function () {
+  it("deve passar funções como valores", function () {
 
     var appendRules = function (name) {
       return name + " rules!";

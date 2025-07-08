@@ -1,24 +1,24 @@
-describe("About Objects", function () {
+describe("Sobre Objetos", function () {
 
-  describe("Properties", function () {
+  describe("Propriedades", function () {
     var megalomaniac;
 
     beforeEach(function () {
        megalomaniac = {  mastermind: "Joker", henchwoman: "Harley" };
     });
 
-    it("should confirm objects are collections of properties", function () {
+    it("deve confirmar que objetos são coleções de propriedades", function () {
       expect(megalomaniac.mastermind).toBe(FILL_ME_IN);
     });
 
-    it("should confirm that properties are case sensitive", function () {
+    it("deve confirmar que propriedades são sensíveis a maiúsculas e minúsculas", function () {
       expect(megalomaniac.henchwoman).toBe(FILL_ME_IN);
       expect(megalomaniac.henchWoman).toBe(FILL_ME_IN);
     });
   });
 
 
-  it("should know properties that are functions act like methods", function () {
+  it("deve conhecer propriedades que são funções e agem como métodos", function () {
     var megalomaniac = {
       mastermind : "Brain",
       henchman: "Pinky",
@@ -32,7 +32,7 @@ describe("About Objects", function () {
     expect(FILL_ME_IN).toMatch(battleCry);
   });
 
-  it("should confirm that when a function is attached to an object, 'this' refers to the object", function () {
+  it("deve confirmar que quando uma função é anexada a um objeto, 'this' se refere ao objeto", function () {
     var currentDate = new Date();
     var currentYear = (currentDate.getFullYear());
     var megalomaniac = {
@@ -48,7 +48,7 @@ describe("About Objects", function () {
     expect(megalomaniac.calculateAge()).toBe(FILL_ME_IN);
   });
 
-  describe("'in' keyword", function () {
+  describe("palavra-chave 'in'", function () {
     var megalomaniac;
     beforeEach(function () {
       megalomaniac = {
@@ -58,14 +58,14 @@ describe("About Objects", function () {
       };
     });
 
-    it("should have the bomb", function () {
+    it("deve ter a bomba", function () {
 
       var hasBomb = "theBomb" in megalomaniac;
 
       expect(hasBomb).toBe(FILL_ME_IN);
     });
 
-    it("should not have the detonator however", function () {
+    it("não deve ter o detonador, no entanto", function () {
 
       var hasDetonator = "theDetonator" in megalomaniac;
 
@@ -73,7 +73,7 @@ describe("About Objects", function () {
     });
   });
 
-  it("should know that properties can be added and deleted", function () {
+  it("deve saber que propriedades podem ser adicionadas e deletadas", function () {
     var megalomaniac = { mastermind : "Agent Smith", henchman: "Agent Smith" };
 
     expect("secretary" in megalomaniac).toBe(FILL_ME_IN);
@@ -86,7 +86,7 @@ describe("About Objects", function () {
   });
 
 
-  it("should use prototype to add to all objects", function () {
+  it("deve usar prototype para adicionar a todos os objetos", function () {
       function Circle(radius)
       {
         this.radius = radius;

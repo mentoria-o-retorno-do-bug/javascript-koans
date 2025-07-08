@@ -1,6 +1,6 @@
 var _; //globals
 
-describe("About Applying What We Have Learnt", function() {
+describe("Sobre Aplicar o Que Aprendemos", function() {
 
   var products;
 
@@ -16,7 +16,7 @@ describe("About Applying What We Have Learnt", function() {
 
   /*********************************************************************************/
 
-  it("given I'm allergic to nuts and hate mushrooms, it should find a pizza I can eat (imperative)", function () {
+  it("dado que sou alérgico a nozes e odeio cogumelos, deve encontrar uma pizza que posso comer (imperativo)", function () {
 
     var i,j,hasMushrooms, productsICanEat = [];
 
@@ -35,18 +35,18 @@ describe("About Applying What We Have Learnt", function() {
     expect(productsICanEat.length).toBe(FILL_ME_IN);
   });
 
-  it("given I'm allergic to nuts and hate mushrooms, it should find a pizza I can eat (functional)", function () {
+  it("dado que sou alérgico a nozes e odeio cogumelos, deve encontrar uma pizza que posso comer (funcional)", function () {
 
       var productsICanEat = [];
 
-      /* solve using filter() & all() / any() */
+      /* resolver usando filter() & all() / any() */
 
       expect(productsICanEat.length).toBe(FILL_ME_IN);
   });
 
   /*********************************************************************************/
 
-  it("should add all the natural numbers below 1000 that are multiples of 3 or 5 (imperative)", function () {
+  it("deve somar todos os números naturais abaixo de 1000 que são múltiplos de 3 ou 5 (imperativo)", function () {
 
     var sum = 0;
     for(var i=1; i<1000; i+=1) {
@@ -58,15 +58,15 @@ describe("About Applying What We Have Learnt", function() {
     expect(sum).toBe(FILL_ME_IN);
   });
 
-  it("should add all the natural numbers below 1000 that are multiples of 3 or 5 (functional)", function () {
+  it("deve somar todos os números naturais abaixo de 1000 que são múltiplos de 3 ou 5 (funcional)", function () {
 
-    var sum = FILL_ME_IN;    /* try chaining range() and reduce() */
+    var sum = FILL_ME_IN;    /* tentar encadear range() e reduce() */
 
     expect(233168).toBe(FILL_ME_IN);
   });
 
   /*********************************************************************************/
-   it("should count the ingredient occurrence (imperative)", function () {
+   it("deve contar a ocorrência de ingredientes (imperativo)", function () {
     var ingredientCount = { "{ingredient name}": 0 };
 
     for (i = 0; i < products.length; i+=1) {
@@ -78,35 +78,35 @@ describe("About Applying What We Have Learnt", function() {
     expect(ingredientCount['mushrooms']).toBe(FILL_ME_IN);
   });
 
-  it("should count the ingredient occurrence (functional)", function () {
+  it("deve contar a ocorrência de ingredientes (funcional)", function () {
     var ingredientCount = { "{ingredient name}": 0 };
 
-    /* chain() together map(), flatten() and reduce() */
+    /* encadear map(), flatten() e reduce() */
 
     expect(ingredientCount['mushrooms']).toBe(FILL_ME_IN);
   });
 
   /*********************************************************************************/
-  /* UNCOMMENT FOR EXTRA CREDIT */
+  /* DESCOMENTE PARA CRÉDITO EXTRA */
   /*
-  it("should find the largest prime factor of a composite number", function () {
+  it("deve encontrar o maior fator primo de um número composto", function () {
 
   });
 
-  it("should find the largest palindrome made from the product of two 3 digit numbers", function () {
+  it("deve encontrar o maior palíndromo feito do produto de dois números de 3 dígitos", function () {
 
   });
 
-  it("should find the smallest number divisible by each of the numbers 1 to 20", function () {
+  it("deve encontrar o menor número divisível por cada um dos números de 1 a 20", function () {
 
 
   });
 
-  it("should find the difference between the sum of the squares and the square of the sums", function () {
+  it("deve encontrar a diferença entre a soma dos quadrados e o quadrado das somas", function () {
 
   });
 
-  it("should find the 10001st prime", function () {
+  it("deve encontrar o 10001º primo", function () {
 
   });
   */

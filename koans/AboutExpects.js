@@ -1,40 +1,40 @@
-describe('About Expects', function() {
+describe('Sobre Expectativas', function() {
 
-  // We shall contemplate truth by testing reality, via spec expectations.
-  it('should expect true', function() {
+  // Devemos contemplar a verdade testando a realidade, via expectativas de teste.
+  it('deve esperar verdadeiro', function() {
 
-    // Your journey begins here: Replace the word false with true 
+    // Sua jornada começa aqui: Substitua a palavra falso por verdadeiro 
     expect(false).toBeTruthy();
   });
 
-  // To understand reality, we must compare our expectations against reality.
-  it('should expect equality', function() {
+  // Para entender a realidade, devemos comparar nossas expectativas contra a realidade.
+  it('deve esperar igualdade', function() {
     var expectedValue = FILL_ME_IN;
     var actualValue = 1 + 1;
 
     expect(actualValue === expectedValue).toBeTruthy();
   });
 
-  // Some ways of asserting equality are better than others.
-  it('should assert equality a better way', function() {
+  // Algumas formas de afirmar igualdade são melhores que outras.
+  it('deve afirmar igualdade de uma forma melhor', function() {
     var expectedValue = FILL_ME_IN;
     var actualValue = 1 + 1;
 
-  // toEqual() compares using common sense equality.
+  // toEqual() compara usando igualdade de senso comum.
     expect(actualValue).toEqual(expectedValue);
   });
 
-  // Sometimes you need to be precise about what you "type."
-  it('should assert equality with ===', function() {
+  // Às vezes você precisa ser preciso sobre o que você "digita."
+  it('deve afirmar igualdade com ===', function() {
     var expectedValue = FILL_ME_IN;
     var actualValue = (1 + 1).toString();
 
-  // toBe() will always use === to compare.
+  // toBe() sempre usará === para comparar.
     expect(actualValue).toBe(expectedValue);
   });
 
-  // Sometimes we will ask you to fill in the values.
-  it('should have filled in values', function() {
+  // Às vezes pediremos para você preencher os valores.
+  it('deve ter valores preenchidos', function() {
     expect(1 + 1).toEqual(FILL_ME_IN);
   });
 });
