@@ -4,12 +4,12 @@ describe('Sobre Expectativas', function() {
   it('deve esperar verdadeiro', function() {
 
     // Sua jornada começa aqui: Substitua a palavra falso por verdadeiro 
-    expect(false).toBeTruthy();
+    expect(true).toBeTruthy();
   });
 
   // Para entender a realidade, devemos comparar nossas expectativas contra a realidade.
   it('deve esperar igualdade', function() {
-    var expectedValue = FILL_ME_IN;
+    var expectedValue = 2;
     var actualValue = 1 + 1;
 
     expect(actualValue === expectedValue).toBeTruthy();
